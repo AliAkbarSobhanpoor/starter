@@ -1,0 +1,42 @@
+# Ignore Python compiled files
+*.pyc
+*.pyo
+__pycache__/
+*.swp
+*.swo
+
+# Ignore virtual environment
+.venv/
+venv/
+.env
+
+# Ignore Django static and media files
+/p_static/
+media/
+
+# Ignore database files (if using SQLite)
+db.sqlite3
+*.sqlite3
+
+# Ignore logs and cache
+*.log
+*.out
+*.pid
+*.lock
+*.db
+*.cache
+*.mo
+*.pot
+
+# Ignore VSCode settings (if using VSCode)
+.vscode/
+
+# Ignore JetBrains IDE settings (PyCharm, IntelliJ)
+.idea/
+
+# Ignore MacOS system files
+.DS_Store
+
+# Ignore coverage reports
+htmlcov/
+.coverage
