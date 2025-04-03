@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # external packages
     'easy_thumbnails',
     'filer',
+    'debug_toolbar'
 ]
 
 MIDDLEWARE = [
@@ -52,6 +53,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # django-debug-toolbar middleware
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -147,3 +150,8 @@ THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.filters',
 )
 FILER_CANONICAL_URL = 'sharing/'
+
+# django-debug-toolbar setting
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
