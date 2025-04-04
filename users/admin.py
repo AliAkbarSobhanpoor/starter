@@ -4,7 +4,9 @@ from django.contrib.auth import get_user_model
 # Register your models here.
 User = get_user_model()
 
+
 class UserAdmin(admin.ModelAdmin):
-    search_fields = ['username']
+    search_fields = ["username"]
+
 
 admin.site.register(User, UserAdmin)
